@@ -1,0 +1,54 @@
+.review-mobile {
+  display: grid;
+  grid-template-rows: auto auto auto auto;
+  grid-template-areas: "user-data" "title" "content" "vote";
+  border: 2px solid #b9cadf;
+  padding: 5px;
+  box-shadow: -3px 5px 5px 0px #b3bcd1;
+}
+
+.review-user-info {
+  display: flex;
+  flex-direction: row;
+}
+
+.review-rating-mobile {
+  display: flex;
+  flex-direction: row;
+  justify-self: center;
+}
+
+.review-title-mobile {
+  display: grid;
+  grid-template-columns: auto 15%;
+  grid-template-areas: "title report";
+}
+
+.review-title-mobile > h2 {
+  grid-area: title;
+}
+
+.review-rating-mobile {
+  max-height: 40px;
+  margin-top: 15px;
+}
+
+.review-rating-mobile > p {
+  margin-top: auto;
+  margin-bottom: auto;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.review-title-mobile > button {
+  grid-area: report;
+  max-height: 50%;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.username {
+  margin-top: auto;
+  margin-bottom: auto;
+  padding-left: 10px;
+}

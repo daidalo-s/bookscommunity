@@ -1,0 +1,221 @@
+header {
+  padding: 0px;
+  margin: 0px;
+}
+
+footer {
+  place-self: center;
+  justify-self: center;
+  align-self: center;
+  border-top: 2px solid #b9cadf;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  width: 100%;
+  text-align: center;
+}
+
+section {
+  margin-top: 50px;
+  margin-left: 20%;
+  margin-right: 20%;
+  padding-bottom: 50px;
+  min-height: 78vh;
+}
+
+button {
+  border-color: white;
+  background-color: white;
+  border-style: none;
+  background-color: rgb(228, 230, 235);
+  border-radius: 50%;
+}
+
+button > img {
+  vertical-align: middle;
+}
+
+pre {
+  display: unset;
+  font-family: "Open Sans", sans-serif;
+  white-space: pre-line;
+}
+
+.load-more-button {
+  padding-top: 30px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+#load-more {
+  max-width: 70px;
+  min-height: 40px;
+}
+
+.hidden-search {
+  display: none;
+}
+/************************************************/
+
+/* Container della pagina */
+.grid-container {
+  min-height: 100vh;
+}
+
+.hidden {
+  display: none;
+}
+
+/********************** Header *******************/
+
+.header-grid {
+  display: grid;
+  grid-template-columns: 1fr 6fr 250px;
+  column-gap: 100px;
+  padding-bottom: 5px;
+  border-bottom: 2px solid #b9cadf;
+  padding-top: 5px;
+}
+
+#search-book-slide-down {
+  margin-top: 10px;
+  min-height: 42px;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  min-width: 70%;
+}
+
+#search-book-slide-down-button {
+  background-color: rgb(228, 230, 235);
+  min-height: 42px;
+  border-radius: 50%;
+}
+
+.hidden-search-bar {
+  grid-column: span 3;
+  vertical-align: middle;
+}
+
+.search-bar {
+  display: flex;
+  justify-content: space-between;
+}
+
+.left-nav-flexbox {
+  display: flex;
+  grid-column-start: 3;
+  justify-content: space-evenly;
+}
+
+#search-book-bar-button {
+  min-height: 90%;
+}
+
+#search-book {
+  font-size: 16px;
+  text-decoration: underline;
+  border-radius: 3px;
+  border-color: white;
+  border-top: white;
+  border-left: white;
+  background-color: rgb(228, 230, 235);
+  min-width: 90%;
+  min-height: 90%;
+  padding-left: 5px;
+}
+
+#search-book-bar-button {
+  margin-left: 5px;
+}
+
+#logo {
+  width: 50px;
+}
+
+button:hover,
+#search-book:hover,
+#search-book-slide-down-button:hover,
+#search-book-bar-button:hover {
+  background-color: rgb(201, 203, 207);
+  cursor: pointer;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+  background-color: rgba(255, 255, 255, 0.991);
+  box-shadow: 0px 2px 8px 0px rgba(165, 192, 201, 0.52);
+}
+
+/*********************** Content area ***********************/
+.main-content {
+  display: grid;
+}
+
+.main-content-header {
+  display: flex;
+}
+
+.banner {
+  margin-top: 20px;
+  width: 70%;
+  font-size: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  position: fixed;
+  top: 20px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+  z-index: 9999;
+}
+
+.message {
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.error {
+  background-color: rgba(250, 114, 114, 0.88);
+}
+
+.success {
+  background-color: rgba(189, 250, 114, 0.768);
+}
+
+/**************** Media-query ****************/
+@media screen and (max-width: 1000px) {
+  .header-grid {
+    column-gap: 50px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  section {
+    margin-left: 12%;
+    margin-right: 12%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  section {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+  .header-grid {
+    column-gap: 20px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  section {
+    margin-left: 3%;
+    margin-right: 3%;
+  }
+}

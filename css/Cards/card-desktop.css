@@ -1,0 +1,33 @@
+/* Card desktop */
+.card-desktop {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: auto auto auto auto auto auto;
+  grid-template-areas:
+    "title title"
+    "cover genre"
+    "cover description"
+    "cover author"
+    "cover year"
+    "cover isbn";
+  border: 2px solid #b9cadf;
+  box-sizing: border-box;
+  padding: 10px;
+  cursor: pointer;
+  box-shadow: -3px 5px 5px 0px #b3bcd1;
+  min-width: 100%;
+}
+
+.card-desktop:hover {
+  background-color: #d9e6f5;
+}
+
+.img-container-desktop {
+  grid-area: cover;
+  max-width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  align-self: center;
+}

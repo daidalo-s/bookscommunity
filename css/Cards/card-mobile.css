@@ -1,0 +1,36 @@
+/* Card mobile */
+.card-mobile {
+  display: grid;
+  grid-template-rows: auto auto auto auto auto auto auto;
+  height: fit-content;
+  grid-template-areas:
+    "title"
+    "cover"
+    "genre"
+    "description"
+    "author"
+    "year"
+    "isbn";
+  box-sizing: border-box;
+  border: 2px solid #b9cadf;
+  cursor: pointer;
+  box-shadow: -3px 5px 5px 0px #b3bcd1;
+  min-width: 100%;
+}
+
+.img-container-mobile {
+  grid-area: cover;
+  max-width: 30%;
+  margin-left: auto;
+  margin-right: auto;
+  min-height: 150px;
+}
+
+.title-mobile,
+.genre-mobile,
+.description-mobile,
+.author-mobile,
+.year-mobile,
+.isbn-mobile {
+  text-align: center;
+}

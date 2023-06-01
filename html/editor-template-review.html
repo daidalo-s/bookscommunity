@@ -1,0 +1,31 @@
+<form action="" enctype="multipart/form-data">
+  <div class="main-content-header">
+    <h2>Aggiungi ora la tua recensione!</h2>
+  </div>
+  <div class="main-content-cards">
+    <div class="form-desktop">
+      <div class="book-review-form">
+        <div class="title-input">
+          <label for="review-title">Inserisci il titolo:</label>
+          <input
+            type="text"
+            name="review-title"
+            id="review-title"
+            maxlength="60"
+            required
+          />
+        </div>
+        <textarea
+          name="book-review"
+          id="book-review"
+          cols="30"
+          rows="10"
+          placeholder="Scrivi qui la tua recensione - max 3000 caratteri"
+          maxlength="3000"
+          required
+        ></textarea>
+        <button id="submit">Conferma</button>
+      </div>
+    </div>
+  </div>
+</form>

@@ -1,0 +1,48 @@
+/* Comune a entrambe le card */
+.image-desktop,
+.image-mobile {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.title-desktop,
+.title-mobile {
+  grid-area: title;
+  font-size: 24px;
+  text-align: center;
+}
+
+.genre-desktop,
+.genre-mobile {
+  grid-area: genre;
+}
+
+.description-desktop,
+.description-mobile {
+  grid-area: description;
+}
+
+.author-desktop,
+.author-mobile {
+  grid-area: author;
+}
+
+.year-desktop,
+.year-mobile {
+  grid-area: year;
+}
+
+.isbn-desktop,
+.isbn-mobile {
+  grid-area: isbn;
+}
+
+.review-visual {
+  margin-top: 20px;
+}
+
+.card-desktop:hover,
+.card-mobile:hover {
+  background-color: #d9e6f5;
+}

@@ -1,0 +1,20 @@
+.review-desktop {
+  display: grid;
+  grid-template-columns: 7% auto;
+  column-gap: 2%;
+  grid-template-rows: auto auto auto;
+  grid-template-areas: "vote user-data" "vote title" "vote content";
+  border: 2px solid #b9cadf;
+  padding: 5px;
+  box-shadow: -3px 5px 5px 0px #b3bcd1;
+}
+
+.rating {
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+hr {
+  width: 100%;
+}

@@ -1,0 +1,163 @@
+.stats {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto;
+  column-gap: 10%;
+}
+
+.reviewed-books-number {
+  border: 1px solid blue;
+  text-align: center;
+  cursor: pointer;
+}
+
+.upvote-number {
+  border: 1px solid blue;
+  text-align: center;
+}
+
+.upvote-number,
+.reviewed-books-number {
+  min-height: fit-content;
+  width: 60%;
+  padding: 15px;
+  justify-self: center;
+  border: 2px solid #b9cadf;
+  box-shadow: -3px 5px 5px 0px #b3bcd1;
+}
+
+.profile-settings {
+  margin-top: 50px;
+}
+
+.change-password,
+.delete-profile {
+  margin-left: auto;
+  margin-right: auto;
+  width: fit-content;
+  text-align: center;
+}
+
+#change-password,
+#delete-profile {
+  border-radius: 0%;
+  font-size: 18px;
+  font-family: "Open Sans", sans-serif;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;
+  width: 200px;
+}
+
+#change-password {
+  border: 2px solid #b9cadf;
+  background-color: white;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: -3px 5px 5px 0px #b3bcd1;
+}
+
+#change-password:hover {
+  background-color: #afc3dcd5;
+}
+
+#delete-profile:hover {
+  background-color: rgb(228, 105, 105);
+}
+
+#delete-profile {
+  margin-top: 20px;
+  background-color: rgba(250, 114, 114, 0.88);
+  border: 2px solid rgba(252, 93, 93, 0.854);
+  box-shadow: -3px 5px 5px 0px #dd8586;
+}
+
+.reviewed-books-number:hover {
+  background-color: #afc3dcd5;
+}
+
+.change-password-form {
+  font-size: 18px;
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto auto auto auto;
+  margin-top: 20px;
+  row-gap: 10px;
+  column-gap: 20px;
+  margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#submit-pw-change {
+  grid-column: span 2;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 18px;
+  border-radius: 0%;
+  border: 2px solid #b9cadf;
+  background-color: white;
+}
+
+.back-button {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-right: 20px;
+}
+
+.pw-requirements {
+  grid-column: span 2;
+}
+
+.pw-not-matching {
+  grid-column: span 2;
+  background-color: rgba(250, 114, 114, 0.88);
+  max-height: 50px;
+}
+
+.pw-not-matching p {
+  font-size: 18px;
+  margin-top: auto;
+  margin-bottom: auto;
+  text-align: center;
+}
+
+.consequences {
+  text-align: start;
+}
+
+#safe,
+#nuke {
+  border-radius: 0%;
+  font-size: 18px;
+  background-color: white;
+}
+
+#safe {
+  border: 2px solid #b9cadf;
+  box-shadow: -3px 5px 5px 0px #b3bcd1;
+}
+
+#safe:hover {
+  background-color: #afc3dcd5;
+}
+
+#nuke {
+  border: 2px solid rgba(252, 93, 93, 0.854);
+  box-shadow: -3px 5px 5px 0px #dd8586;
+}
+
+#nuke:hover {
+  background-color: rgb(228, 105, 105);
+}
+
+.button-area {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+input {
+  align-self: center;
+  height: fit-content;
+}

@@ -1,0 +1,174 @@
+.hidden {
+  display: none !important;
+}
+
+footer {
+  grid-column: span 2;
+  place-self: center;
+  justify-self: center;
+  align-self: center;
+  border-top: 2px solid #b9cadf;
+  padding-top: 10px;
+}
+
+button {
+  border-color: white;
+  background-color: white;
+  border-style: none;
+}
+
+/* Il container di tutta la pagina */
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 9fr 1fr;
+  grid-template-areas: none;
+  min-height: 100vh;
+  align-items: center;
+  column-gap: 10%;
+}
+
+/* Tutto ciò che riguarda lo stile di elementi nell'header */
+header {
+  grid-column: span 2;
+  padding: 0px;
+  margin: 0px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #b9cadf;
+}
+
+header a {
+  text-decoration: none;
+  font-size: 30px;
+  vertical-align: middle;
+  font-weight: bolder;
+}
+
+header img {
+  vertical-align: middle;
+}
+
+/* In comune alle due colonne */
+/* RIEMPI */
+#register-form-div,
+#login-form-div {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  /* Se metti la row-gap in % non il browser non calcola correttamente
+  la grandezza del div container */
+  row-gap: 10px;
+  /* column-gap: 10%; */
+}
+
+.register-form-toggle,
+.login-form-toggle {
+  background-color: white;
+  border: none;
+  border-left: 1px solid #b9cadf;
+  border-bottom: 1px solid #b9cadf;
+  border-radius: 0%;
+}
+
+#register,
+#login {
+  grid-column: span 2;
+  width: fit-content;
+  /* Justify lo sposta orizzontalmente,
+  align lo sposta verticalmente */
+  justify-self: center;
+}
+
+/* Left col */
+.info {
+  padding: 10%;
+}
+
+/* Right col */
+.login {
+  border: 1px solid #b9cadf;
+  /* padding: 10%; */
+  /* padding: 5%; */
+  padding-bottom: 10px;
+  margin-right: 10%;
+}
+
+button {
+  font-size: 18px;
+}
+
+label {
+  justify-self: center;
+  align-self: center;
+  text-align: center;
+}
+
+input {
+  justify-self: center;
+  align-self: center;
+}
+
+/* Utils */
+.section-toggled {
+  background: #b9cadf;
+}
+
+.section-button-hover:hover {
+  background-color: #7395bf;
+}
+
+.button {
+  background-color: white;
+  border: 2px solid #b9cadf;
+  border-radius: 0%;
+}
+
+#pw-requirements {
+  grid-column: span 2;
+  justify-self: start;
+  font-size: 15px;
+}
+
+#pw-requirements > ul {
+  margin: 20px;
+  padding: 0px;
+}
+
+/* Responsive */
+@media screen and (max-width: 720px) {
+  .grid-container {
+    min-height: 100vh;
+    grid-template-rows: auto;
+  }
+
+  .info,
+  .login {
+    grid-column: span 2;
+    align-items: center;
+    justify-self: center;
+    margin-right: 0px;
+  }
+
+  .login {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  footer {
+    margin-top: 70px;
+  }
+}
+
+#pw-requirements {
+  margin: auto;
+}
+
+.password-error,
+.login-error {
+  background-color: rgba(250, 114, 114, 0.88);
+  grid-column: span 2;
+  text-align: center;
+}
+
+#title {
+  color: black;
+}

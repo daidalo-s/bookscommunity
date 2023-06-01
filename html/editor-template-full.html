@@ -1,0 +1,147 @@
+<div class="main-content-header">
+  <button class="back-button">
+    <img src="../img/back.svg" alt="" />
+  </button>
+  <h2>Compila la scheda libro:</h2>
+</div>
+<form enctype="multipart/form-data">
+  <div class="main-content-cards">
+    <div class="form-desktop">
+      <div class="book-summary-form">
+        <label for="title">Titolo del libro:</label>
+        <input
+          type="text"
+          name="book-title"
+          id="book-title"
+          class="input-desktop"
+          maxlength="250"
+          required
+        />
+        <label for="book-author">Autore del libro:</label>
+        <input
+          type="text"
+          name="book-author"
+          id="book-author"
+          class="input-desktop"
+          maxlength="250"
+          required
+        />
+        <label for="book-genre">Genere del libro:</label>
+        <select name="genre" id="book-genre" class="input-desktop" required>
+          <option value="">--Scegli un'opzione--</option>
+          <option value="Romanzo">Romanzo</option>
+          <option value="Fantascienza">Fantascienza</option>
+          <option value="Fantasy">Fantasy</option>
+          <option value="Giallo">Giallo</option>
+          <option value="Biografia">Biografia</option>
+          <option value="Divulgativo">Divulgativo</option>
+          <option value="Poesia">Poesia</option>
+          <option value="Teatro">Teatro</option>
+        </select>
+        <label for="book-description">Descrizione del libro:</label>
+        <textarea
+          name="book-description"
+          id="book-description"
+          cols="30"
+          rows="10"
+          placeholder="Scrivi qui la descrizione - max 850 caratteri"
+          class="input-desktop"
+          maxlength="850"
+          required
+        ></textarea>
+        <label for="book-year">Anno di pubblicazione</label>
+        <input
+          type="number"
+          name="book-year"
+          id="book-year"
+          class="input-desktop"
+          required
+        />
+        <label for="book-isbn">ISBN:</label>
+        <div class="isbn-input">
+          <input
+            type="text"
+            name="book-isbn-first"
+            id="isbn-first"
+            maxlength="3"
+            size="4"
+            required
+          />
+          -
+          <input
+            type="text"
+            name="book-isbn-second"
+            id="isbn-second"
+            maxlength="2"
+            required
+          />
+          -
+          <input
+            type="text"
+            name="book-isbn-third"
+            id="isbn-third"
+            maxlength="5"
+            required
+          />
+          -
+          <input
+            type="text"
+            name="book-isbn-fourth"
+            id="isbn-fourth"
+            maxlength="2"
+            required
+          />
+          -
+          <input
+            type="text"
+            name="book-isbn-fifth"
+            id="isbn-fifth"
+            maxlength="1"
+            required
+          />
+        </div>
+
+        <label for="book-cover"
+          >Aggiungi la copertina: <br />
+          -un solo file .jpg-</label
+        >
+        <input
+          type="file"
+          name="book-cover"
+          id="book-cover-field"
+          accept=".jpg"
+          required
+        />
+      </div>
+    </div>
+  </div>
+  <div class="main-content-header">
+    <h2>Aggiungi ora la tua recensione!</h2>
+  </div>
+  <div class="main-content-cards">
+    <div class="form-desktop">
+      <div class="book-review-form">
+        <div class="title-input">
+          <label for="review-title">Inserisci il titolo:</label>
+          <input
+            type="text"
+            name="review-title"
+            id="review-title"
+            maxlength="60"
+            required
+          />
+        </div>
+        <textarea
+          name="book-review"
+          id="book-review"
+          cols="30"
+          rows="10"
+          placeholder="Scrivi qui la tua recensione - max 3000 caratteri"
+          maxlength="3000"
+          required
+        ></textarea>
+        <button id="submit">Conferma</button>
+      </div>
+    </div>
+  </div>
+</form>

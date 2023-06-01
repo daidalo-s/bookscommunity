@@ -1,0 +1,40 @@
+<link rel="stylesheet" href="./admin/template-book.css" />
+
+<form class="edit-form" enctype="multipart/form-data">
+  <label for="book-title"><strong> Titolo: </strong></label>
+  <input type="text" name="book-title" id="book-title" required />
+  <label for="book-isbn"><strong> ISBN: </strong></label>
+  <input type="text" name="book-isbn" id="book-isbn" required />
+  <label for="book-author"><strong> Autore: </strong></label>
+  <input type="text" name="book-author" id="book-author" required />
+  <label for="genre"><strong> Genere: </strong></label>
+  <select name="genre" id="book-genre" required>
+    <option value="">--Scegli un'opzione--</option>
+    <option value="Romanzo">Romanzo</option>
+    <option value="Fantascienza">Fantascienza</option>
+    <option value="Fantasy">Fantasy</option>
+    <option value="Giallo">Giallo</option>
+    <option value="Biografia">Biografia</option>
+    <option value="Divulgativo">Divulgativo</option>
+    <option value="Poesia">Poesia</option>
+    <option value="Teatro">Teatro</option>
+  </select>
+  <label for="book-description"
+    ><strong> Descrizione del libro: </strong></label
+  >
+  <textarea
+    name="book-description"
+    id="book-description"
+    cols="30"
+    rows="10"
+    maxlength="850"
+    text="mona"
+    required
+  ></textarea>
+  <label for="book-year"><strong> Anno di pubblicazione: </strong></label>
+  <input type="number" name="book-year" id="book-year" required />
+</form>
+<div class="buttons">
+  <button id="confirm">Salva le modifiche</button>
+  <button id="undo">Annulla</button>
+</div>

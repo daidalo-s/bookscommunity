@@ -1,0 +1,224 @@
+section {
+  margin-top: 30px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+#logout {
+  border-radius: 0%;
+  border: 1px solid red;
+  height: fit-content;
+  align-self: center;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.card-area {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: "num-p rev-num like-num user-num" ". book-rep-num rev-rep-num .";
+  row-gap: 20px;
+  column-gap: 30px;
+  justify-content: center;
+  width: 100%;
+}
+
+.admin-card {
+  border: 2px solid #b9cadf;
+  box-shadow: -3px 5px 5px 0px #b3bcd1;
+  width: 150px;
+  min-height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#post-number {
+  grid-area: num-p;
+  justify-self: start;
+}
+
+#review-number {
+  grid-area: rev-num;
+  justify-self: center;
+}
+
+#like-number {
+  grid-area: like-num;
+  justify-self: center;
+}
+
+#user-number {
+  grid-area: user-num;
+  justify-self: end;
+}
+
+#book-reports {
+  grid-area: book-rep-num;
+  justify-self: center;
+}
+
+#review-reports {
+  grid-area: rev-rep-num;
+  justify-self: center;
+}
+
+.admin-card p {
+  text-align: center;
+}
+
+strong {
+  font-size: 25px;
+}
+
+#logout {
+  background-color: white;
+  border: 2px solid #b9cadf;
+}
+
+#logout:hover {
+  background-color: #b9cadf;
+}
+
+#book-reports:hover {
+  background-color: #b9cadf;
+}
+
+#review-reports:hover {
+  background-color: #b9cadf;
+}
+
+.reported-book-title,
+.reported-review-title {
+  display: flex;
+  flex-direction: row;
+}
+
+.reported-book-title button,
+.reported-review-title button {
+  border-radius: 50%;
+  height: fit-content;
+  margin-top: auto;
+  margin-bottom: auto;
+  width: fit-content;
+}
+
+.spacer {
+  width: 20px;
+}
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+
+.reported-book,
+.reported-review {
+  display: flex;
+  flex-direction: column;
+  padding-left: 10px;
+  padding-right: 10px;
+  border: 2px solid #b9cadf;
+  box-shadow: -3px 5px 5px 0px #b3bcd1;
+}
+
+.reported-book:hover,
+.reported-review:hover {
+  background-color: #b9cadf;
+}
+
+.rep-rev-buttons {
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  column-gap: 100px;
+}
+
+.rep-rev-buttons button {
+  border-radius: 0%;
+  font-size: 20px;
+  background-color: white;
+}
+
+#save-review {
+  background-color: rgba(203, 244, 153, 0.768);
+}
+
+#delete-review {
+  background-color: rgba(236, 139, 139, 0.88);
+}
+
+#save-review:hover {
+  background-color: rgba(153, 200, 95, 0.768);
+}
+
+#delete-review:hover {
+  background-color: rgba(170, 92, 92, 0.88);
+}
+
+.clicked:hover {
+  background-color: white;
+}
+
+/*************************** Media query **************************/
+@media screen and (max-width: 923px) {
+  .card-area {
+    column-gap: 10px;
+  }
+}
+
+@media screen and (max-width: 839px) {
+  .card-area {
+    column-gap: 5px;
+  }
+}
+
+@media screen and (max-width: 819px) {
+  /* Qua cambiamo tutto, layout incluso */
+  .card-area {
+    column-gap: 5px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "num-p rev-num like-num" "user-num book-rep-num rev-rep-num";
+    row-gap: 20px;
+    justify-content: center;
+    width: 100%;
+  }
+
+  #user-number {
+    justify-self: start;
+  }
+
+  #review-reports,
+  #like-number {
+    justify-self: end;
+  }
+}
+
+@media screen and (max-width: 581px) {
+  .card-area {
+    column-gap: 5px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "num-p rev-num" "like-num user-num" "book-rep-num rev-rep-num";
+    justify-content: center;
+    width: 100%;
+  }
+
+  #review-number,
+  #user-number {
+    justify-self: end;
+  }
+
+  #like-number,
+  #book-reports {
+    justify-self: start;
+  }
+}

@@ -1,0 +1,17 @@
+.form-mobile {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.book-summary-form-mobile {
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+}
+
+.input-mobile {
+  width: auto;
+  margin-left: 10px;
+  margin-right: 10px;
+}
