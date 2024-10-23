@@ -1,11 +1,20 @@
-# tweb-progetto
+# BooksCommunity
 
-his project was developed as part of the Web Technologies course at the University of Turin. It is a website built using HTML, CSS, JavaScript, jQuery, PHP, and MySQL database. The main theme of the website is book reviews.
+This project was developed as part of the Web Technologies course at the University of Turin.
+It is a website built using HTML, CSS, JavaScript, jQuery, PHP, and a MySQL database.
+The primary focus of the website is to create a community for book reviews.
 
-Users can register on the website to access and read existing book reviews. Additionally, registered users have the ability to contribute by adding their own reviews. The website provides a platform for users to share their opinions and recommendations on various books.
+## Functionalities
 
-The project aims to create an interactive and user-friendly environment where book enthusiasts can discover new titles, explore different genres, and engage in meaningful discussions. By fostering a community of readers, the website encourages the exchange of literary knowledge and promotes a love for books.
+Users can:
+- Sign up, log in, and delete their accounts.
+- Post new reviews.
+- Explore reviews through the home feed, search bar, or a "One Random Review" button.
+- Upvote, downvote, or report reviews.
+- The admin user has the ability to manage users, including banning them.
 
-The integration of PHP and MySQL allows for efficient data storage and retrieval. Users' information and book reviews are securely stored in the database, ensuring that the website maintains a reliable and scalable infrastructure.
+## Code
 
-Overall, this project demonstrates the application of web technologies in developing a dynamic book review website, offering a valuable resource for book lovers to explore, share, and discover new literary works.
+The website features a fully responsive layout (without using any specific framework—just plain HTML/CSS/JS).
+The PHP backend is designed following web services principles, with APIs that are called by the frontend.
+The code is structured to be as modular and reusable as possible.

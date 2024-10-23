@@ -1,6 +1,6 @@
-import * as navbar from '/tweb-progetto/js/navbar/navbar.js';
-import * as bookCardUtils from '/tweb-progetto/js/utils/book-card.js';
-import * as messageUtil from "/tweb-progetto/js/utils/message.js";
+import * as navbar from 'js/navbar/navbar.js';
+import * as bookCardUtils from 'js/utils/book-card.js';
+import * as messageUtil from "js/utils/message.js";
 
 var windowWidth;
 

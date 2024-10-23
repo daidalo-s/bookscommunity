@@ -16,9 +16,7 @@ $(function () {
 
     $("#password-register").on("focus", function () {
         $("#pw-requirements").slideDown(300);
-    })
-
-    $("#password-register").on("focusout", function () {
+    }).on("focusout", function () {
         $("#pw-requirements").slideUp(300);
     })
 
